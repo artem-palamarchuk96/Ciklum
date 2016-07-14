@@ -1,0 +1,108 @@
+.invision-wrap {
+	text-align: center;
+	padding: 160px 0 145px;
+	background: #323a45;
+	overflow: hidden;
+
+	.invision-inside-wrap {
+		padding: 0 20px;
+		overflow: hidden;
+
+		.invision-header {
+			font-size: 30px;
+			font-weight: 100;
+			color: #fff;
+			margin-bottom: 55px;
+		}
+
+		.invision-reg-form {
+			overflow: hidden;
+			display: inline-block;
+			margin-bottom: 31px;
+			
+			.invision-input-wrap {
+				position: relative;
+				float: left;
+
+				.invision-text-input {			
+					display: block;
+					width: 280px;
+					height: 63px;
+					font-size: 18px;
+					line-height: 1.8em;
+					color: #747c83;
+					border-radius: 3px;
+					padding: 18px 15px;
+					box-sizing: border-box;
+					margin-right: 10px;
+					padding-left: 48px;
+					outline: none;
+				
+					&:focus:valid {
+						border: 2px solid lightgreen;
+					}
+
+					&:focus:invalid {
+						border: 2px solid #ff3366;
+					}
+
+					&:focus::-webkit-input-placeholder {
+						opacity: 0.5;
+						transition: all 1s ease;
+					}
+				}
+
+				i {
+					position: absolute;
+					top: 18px;
+					left: 15px;
+					height: 24px;
+					width: 24px;
+					background-image: url('../img/invision-sprite.png');
+				}
+
+				.invision-name-img {
+					background-position: 0 -474px;
+				}
+
+				.invision-email-img {
+					background-position: 0 -386px;
+				}
+
+				.invision-pass-img {
+					background-position: 0 -430px;
+				}
+			}
+			
+			.invision-btn {
+				display: block;
+				float: left;
+				padding: 24px 40px;
+				background: #ff3366;
+				border: 0;
+				border-radius: 5px;
+				color: white;
+				font-size: 15px;
+				line-height: 1em;
+				font-weight: 700;
+				text-transform: uppercase;
+				cursor: pointer;
+				transition: all 0.3s ease;
+			}
+		}
+
+		.invision-terms {
+			font-size: 12px;
+			color: #747c83;
+			line-height: 1.8em;
+
+			.invision-terms-link {
+				color: #747c83;
+
+				&:hover {
+					color: #fff;
+				}
+			}
+		}
+	}
+}

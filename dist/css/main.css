@@ -13,8 +13,11 @@ body {
   background-size: contain;
   background-position: 500px center;
   background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .dropbox-wrap .dropbox-text-wrap {
   width: 990px;
@@ -70,6 +73,100 @@ body {
 .dropbox-wrap .dropbox-text-wrap .dropbox-buttons-wrap .dropbox-link-wrap .dropbox-link:hover {
   color: #3398ea;
 }
+.invision-wrap {
+  text-align: center;
+  padding: 160px 0 145px;
+  background: #323a45;
+  overflow: hidden;
+}
+.invision-wrap .invision-inside-wrap {
+  padding: 0 20px;
+  overflow: hidden;
+}
+.invision-wrap .invision-inside-wrap .invision-header {
+  font-size: 30px;
+  font-weight: 100;
+  color: #fff;
+  margin-bottom: 55px;
+}
+.invision-wrap .invision-inside-wrap .invision-reg-form {
+  overflow: hidden;
+  display: inline-block;
+  margin-bottom: 31px;
+}
+.invision-wrap .invision-inside-wrap .invision-reg-form .invision-input-wrap {
+  position: relative;
+  float: left;
+}
+.invision-wrap .invision-inside-wrap .invision-reg-form .invision-input-wrap .invision-text-input {
+  display: block;
+  width: 280px;
+  height: 63px;
+  font-size: 18px;
+  line-height: 1.8em;
+  color: #747c83;
+  border-radius: 3px;
+  padding: 18px 15px;
+  box-sizing: border-box;
+  margin-right: 10px;
+  padding-left: 48px;
+  outline: none;
+}
+.invision-wrap .invision-inside-wrap .invision-reg-form .invision-input-wrap .invision-text-input:focus:valid {
+  border: 2px solid lightgreen;
+}
+.invision-wrap .invision-inside-wrap .invision-reg-form .invision-input-wrap .invision-text-input:focus:invalid {
+  border: 2px solid #ff3366;
+}
+.invision-wrap .invision-inside-wrap .invision-reg-form .invision-input-wrap .invision-text-input:focus::-webkit-input-placeholder {
+  opacity: 0.5;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.invision-wrap .invision-inside-wrap .invision-reg-form .invision-input-wrap i {
+  position: absolute;
+  top: 18px;
+  left: 15px;
+  height: 24px;
+  width: 24px;
+  background-image: url('../img/invision-sprite.png');
+}
+.invision-wrap .invision-inside-wrap .invision-reg-form .invision-input-wrap .invision-name-img {
+  background-position: 0 -474px;
+}
+.invision-wrap .invision-inside-wrap .invision-reg-form .invision-input-wrap .invision-email-img {
+  background-position: 0 -386px;
+}
+.invision-wrap .invision-inside-wrap .invision-reg-form .invision-input-wrap .invision-pass-img {
+  background-position: 0 -430px;
+}
+.invision-wrap .invision-inside-wrap .invision-reg-form .invision-btn {
+  display: block;
+  float: left;
+  padding: 24px 40px;
+  background: #ff3366;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  line-height: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.invision-wrap .invision-inside-wrap .invision-terms {
+  font-size: 12px;
+  color: #747c83;
+  line-height: 1.8em;
+}
+.invision-wrap .invision-inside-wrap .invision-terms .invision-terms-link {
+  color: #747c83;
+}
+.invision-wrap .invision-inside-wrap .invision-terms .invision-terms-link:hover {
+  color: #fff;
+}
 .oculus-wrap {
   width: 100%;
   height: 300px;
@@ -85,7 +182,8 @@ body {
 }
 .oculus-wrap .oculus-item:hover .oculus-image-wrap {
   opacity: 0.8;
-  transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
 }
 .oculus-wrap .oculus-item .oculus-image-wrap {
   width: 100%;
@@ -94,8 +192,10 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   opacity: 0.3;
+  -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
 }
 .oculus-wrap .oculus-item .oculus-text-wrap {
   width: 100%;
