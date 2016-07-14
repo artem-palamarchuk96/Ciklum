@@ -1,4 +1,60 @@
 * {
-  margin: 10px;
-  padding: 10px;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: 'Open Sans', 'Verdana', 'Arial', sans-serif;
+}
+.oculus-wrap {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+.oculus-wrap .oculus-item {
+  position: relative;
+  width: 33.333333%;
+  height: 300px;
+  float: left;
+  overflow: hidden;
+  background: #333;
+}
+.oculus-wrap .oculus-item:hover .oculus-image-wrap {
+  opacity: 0.8;
+  transform: scale(1.1, 1.1);
+}
+.oculus-wrap .oculus-item .oculus-image-wrap {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  transition: all 0.3s ease-out;
+  transform: scale(1, 1);
+}
+.oculus-wrap .oculus-item .oculus-text-wrap {
+  width: 100%;
+  position: absolute;
+  top: 45%;
+  box-sizing: border-box;
+  padding: 0 32px;
+  text-align: center;
+  z-index: 10;
+}
+.oculus-wrap .oculus-item .oculus-text-wrap h3,
+.oculus-wrap .oculus-item .oculus-text-wrap h4 {
+  margin: 0;
+}
+.oculus-wrap .oculus-item .oculus-text-wrap > h4 {
+  color: #a4a5a6;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 16px;
+}
+.oculus-wrap .oculus-item .oculus-text-wrap > h3 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 28px;
 }
