@@ -1,0 +1,17 @@
+{
+  "name": "ciklum",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "artem"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/artem-palamarchuk96/ciklum",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
