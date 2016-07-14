@@ -23,6 +23,7 @@ gulp.task('html', function() {
 
 gulp.task('css', function() {
 	return gulp.src('src/css/main.css')
+	//need to add clean css later
 			.pipe(less())
 			.pipe(gulp.dest('dist/css'))
 			.pipe(browsersync.reload({stream: true}))
