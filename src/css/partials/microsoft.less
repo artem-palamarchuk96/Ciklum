@@ -1,0 +1,162 @@
+.microsoft-main-wrap {
+	background: #fff;
+	font-family: "Segoe UI","wf_segoe-ui_normal","Arial",sans-serif;
+
+	.microsoft-wrap {
+		width: 90%;
+		margin: 0 auto;
+		overflow: hidden;
+
+		.microsoft-left-side {
+			width: 50%;
+			float: left;
+			
+			a {
+				
+				.microsoft-logo-wrap {
+					width: 100px;
+					float: left;
+					margin-top: 13px;
+					box-sizing: border-box;
+					
+					img {
+						width: 100%;
+					}
+				}
+			}
+
+			.microsoft-nav-wrap {
+				float: left;
+				margin-left: 18px;
+
+				ul {
+					list-style-type: none;
+
+					li {
+						float: left;
+						
+						a {
+							display: block;
+							padding: 0 1.5em;
+							line-height: 48px;
+							color: #2F2F2F;
+							text-decoration: none;
+							transition: all 0.5s ease;
+
+							&:hover {
+								background-color: #f2f2f2;
+							}
+
+							i.fa-angle-down {
+								font-size: 12px;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.microsoft-right-side {
+			float: right;
+
+			form {
+				float: left;
+				overflow: hidden;
+				margin: 7px 5px 0 0;
+			}
+
+			input[type="search"] {
+				float: left;
+				width: 244px;
+				height: 36px;
+				padding: 0 10px;
+				border: 1px solid #A9A9A9;
+				border-right: 0;
+				outline: none;
+				font-family: "Segoe UI","wf_segoe-ui_normal","Arial",sans-serif;
+				font-size: 14px;
+
+				&::-webkit-search-cancel-button {
+					display: none;
+				}
+
+				&::-webkit-input-placeholder {
+					color: #000;
+				}
+
+				&:-moz-placeholder {
+					color: #000;
+				}
+
+				&::-moz-placeholder {
+					color: #000;
+				}
+				
+				&:-ms-input-placeholder {
+					color: #000;
+				}
+			}
+
+			button[type="submit"] {
+				background-color: transparent;
+				position: static;
+				border: 1px solid #A9A9A9;
+				border-left: none;
+				width: 33px;
+				height: 36px;		
+				outline: none;
+				color: #999;
+				cursor: pointer;
+				font-size: 20px;
+
+				&:hover {
+					color: #0078D7;
+				}
+
+				i.fa-neuter {
+					margin-top: 5px;
+					transform: rotate(45deg);
+				}
+			}
+
+			.microsoft-cart {
+				float: left;
+
+				a {
+					display: block;
+					line-height: 48px;
+					padding: 0 12px;
+					color: #2F2F2F;
+					text-decoration: none;
+					font-size: 12px;
+
+					&:hover {
+						background-color: #f2f2f2;
+					}
+
+					i.fa-shopping-cart {
+						font-size: 20px;
+					}
+				}
+			}
+
+			.microsoft-signin {
+				float: left;
+
+				a {
+					display: block;
+					line-height: 48px;
+					padding: 0 12px;
+					color: #2F2F2F;
+					text-decoration: none;
+					font-size: 12px;
+
+					&:hover {
+						background-color: #f2f2f2;
+					}
+				}
+			}
+		}
+	}
+}
+

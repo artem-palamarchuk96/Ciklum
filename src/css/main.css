@@ -3,6 +3,9 @@
 	padding: 0px;
 }
 
+@import (less) url(../../bower_components/font-awesome/css/font-awesome.css);
+
+
 @import (less) url(partials/fonts.css);
 @import (less) url(partials/microsoft.less);
 @import (less) url(partials/microsoft-media.less);
