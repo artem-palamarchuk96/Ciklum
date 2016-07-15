@@ -2,8 +2,9 @@
   margin: 0px;
   padding: 0px;
 }
-body {
-  font-family: 'Open Sans', 'Verdana', 'Arial', sans-serif;
+@font-face {
+  font-family: 'MyriadSetPro-Medium';
+  src: url('../fonts/Myriad-Set-Pro-Medium/MyriadSetPro-Medium.ttf') format('truetype');
 }
 .dropbox-wrap {
   width: 100%;
@@ -18,6 +19,7 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  font-family: 'Open Sans', 'Verdana', 'Arial', sans-serif;
 }
 .dropbox-wrap .dropbox-text-wrap {
   width: 990px;
@@ -78,6 +80,7 @@ body {
   padding: 160px 0 145px;
   background: #323a45;
   overflow: hidden;
+  font-family: 'Open Sans', 'Verdana', 'Arial', sans-serif;
 }
 .invision-wrap .invision-inside-wrap {
   padding: 0 20px;
@@ -222,4 +225,113 @@ body {
   font-size: 22px;
   font-weight: 600;
   line-height: 28px;
+}
+.apple-main-wrap {
+  background-color: #f2f2f2;
+}
+.apple-main-wrap .apple-wrap {
+  width: 100%;
+  overflow: hidden;
+  font-size: 12px;
+  margin: 0 auto;
+  padding: 0 22px;
+  max-width: 980px;
+  font-family: 'MyriadSetPro-Medium', 'Verdana', 'Arial', sans-serif;
+}
+.apple-main-wrap .apple-wrap .apple-top-wrap {
+  overflow: hidden;
+}
+.apple-main-wrap .apple-wrap .apple-top-wrap .apple-item {
+  width: 20%;
+  position: relative;
+  float: left;
+  line-height: 1.66667;
+  padding-top: 32px;
+}
+.apple-main-wrap .apple-wrap .apple-top-wrap .apple-item h3 {
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+}
+.apple-main-wrap .apple-wrap .apple-top-wrap .apple-item .header-pad {
+  padding-top: 20px;
+}
+.apple-main-wrap .apple-wrap .apple-top-wrap .apple-item ul {
+  list-style-type: none;
+}
+.apple-main-wrap .apple-wrap .apple-top-wrap .apple-item ul li a {
+  color: #666;
+  text-decoration: none;
+}
+.apple-main-wrap .apple-wrap .apple-top-wrap .apple-item ul li a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+.apple-main-wrap .apple-wrap .apple-bottom-wrap {
+  padding: 20px 0 24px;
+  overflow: hidden;
+}
+.apple-main-wrap .apple-wrap .apple-bottom-wrap .apple-footer-shop {
+  border-bottom: 1px solid #e3e3e3;
+  margin-bottom: 6px;
+  padding-bottom: 5px;
+  color: #999;
+}
+.apple-main-wrap .apple-wrap .apple-bottom-wrap .apple-footer-shop a {
+  color: #08c;
+  text-decoration: none;
+}
+.apple-main-wrap .apple-wrap .apple-bottom-wrap .apple-footer-shop a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+.apple-main-wrap .apple-wrap .apple-bottom-wrap .apple-copyright {
+  color: #999;
+  float: left;
+  margin-right: 16px;
+}
+.apple-main-wrap .apple-wrap .apple-bottom-wrap .apple-bottom-nav {
+  overflow: hidden;
+  float: left;
+  color: #666;
+}
+.apple-main-wrap .apple-wrap .apple-bottom-wrap .apple-bottom-nav ul {
+  list-style-type: none;
+}
+.apple-main-wrap .apple-wrap .apple-bottom-wrap .apple-bottom-nav ul li {
+  float: left;
+  border-right: 1px solid #e3e3e3;
+  padding: 0 10px;
+}
+.apple-main-wrap .apple-wrap .apple-bottom-wrap .apple-bottom-nav ul li:last-child {
+  border: none;
+}
+.apple-main-wrap .apple-wrap .apple-bottom-wrap .apple-bottom-nav ul li a {
+  color: #666;
+  text-decoration: none;
+}
+.apple-main-wrap .apple-wrap .apple-bottom-wrap .apple-bottom-nav ul li a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+.apple-main-wrap .apple-wrap .apple-bottom-wrap .apple-us-ico {
+  float: right;
+  position: relative;
+}
+.apple-main-wrap .apple-wrap .apple-bottom-wrap .apple-us-ico:before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/apple-us-ico.png);
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: -20px;
+}
+.apple-main-wrap .apple-wrap .apple-bottom-wrap .apple-us-ico a {
+  color: #666;
+  text-decoration: none;
+}
+.apple-main-wrap .apple-wrap .apple-bottom-wrap .apple-us-ico a:hover {
+  color: #333;
+  text-decoration: underline;
 }

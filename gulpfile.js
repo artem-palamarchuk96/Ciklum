@@ -14,8 +14,7 @@ gulp.task('html', function() {
 	return gulp.src('src/index.html')
 			.pipe(rigger())
 			.pipe(htmlmin({
-				collapseInlineTagWhitespace: true,
-				collapseWhitespace: true
+				collapseInlineTagWhitespace: true
 			}))
 			.pipe(gulp.dest('dist'))
 			.pipe(browsersync.reload({stream: true}))
