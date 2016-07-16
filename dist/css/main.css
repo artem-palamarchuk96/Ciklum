@@ -2201,39 +2201,51 @@
   font-family: 'MyriadSetPro-Medium';
   src: url('../fonts/Myriad-Set-Pro-Medium/MyriadSetPro-Medium.ttf') format('truetype');
 }
-.microsoft-main-wrap {
+.links-general {
+  color: #2F2F2F;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.cart-links {
+  display: block;
+  line-height: 48px;
+  padding: 0 12px;
+  font-size: 12px;
+}
+.ms-main-wrap {
   background: #fff;
   font-family: "Segoe UI", "wf_segoe-ui_normal", "Arial", sans-serif;
 }
-.microsoft-main-wrap .microsoft-wrap {
+.ms-main-wrap .ms-wrap {
   width: 90%;
   margin: 0 auto;
-  overflow: hidden;
 }
-.microsoft-main-wrap .microsoft-wrap .microsoft-left-side {
+.ms-main-wrap .ms-wrap .ms-left-side {
   width: 50%;
   float: left;
 }
-.microsoft-main-wrap .microsoft-wrap .microsoft-left-side a .microsoft-logo-wrap {
+.ms-main-wrap .ms-wrap .ms-left-side a .ms-logo-wrap {
   width: 100px;
   float: left;
   margin-top: 13px;
   box-sizing: border-box;
 }
-.microsoft-main-wrap .microsoft-wrap .microsoft-left-side a .microsoft-logo-wrap img {
+.ms-main-wrap .ms-wrap .ms-left-side a .ms-logo-wrap img {
   width: 100%;
 }
-.microsoft-main-wrap .microsoft-wrap .microsoft-left-side .microsoft-nav-wrap {
+.ms-main-wrap .ms-wrap .ms-left-side .ms-nav-wrap {
   float: left;
   margin-left: 18px;
 }
-.microsoft-main-wrap .microsoft-wrap .microsoft-left-side .microsoft-nav-wrap ul {
+.ms-main-wrap .ms-wrap .ms-left-side .ms-nav-wrap > ul {
   list-style-type: none;
 }
-.microsoft-main-wrap .microsoft-wrap .microsoft-left-side .microsoft-nav-wrap ul li {
+.ms-main-wrap .ms-wrap .ms-left-side .ms-nav-wrap > ul > li {
+  position: relative;
   float: left;
 }
-.microsoft-main-wrap .microsoft-wrap .microsoft-left-side .microsoft-nav-wrap ul li a {
+.ms-main-wrap .ms-wrap .ms-left-side .ms-nav-wrap > ul > li > a {
   display: block;
   padding: 0 1.5em;
   line-height: 48px;
@@ -2242,21 +2254,77 @@
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-.microsoft-main-wrap .microsoft-wrap .microsoft-left-side .microsoft-nav-wrap ul li a:hover {
+.ms-main-wrap .ms-wrap .ms-left-side .ms-nav-wrap > ul > li > a:hover,
+.ms-main-wrap .ms-wrap .ms-left-side .ms-nav-wrap > ul > li > a:focus {
   background-color: #f2f2f2;
 }
-.microsoft-main-wrap .microsoft-wrap .microsoft-left-side .microsoft-nav-wrap ul li a i.fa-angle-down {
+.ms-main-wrap .ms-wrap .ms-left-side .ms-nav-wrap > ul > li > a i.fa-angle-down {
   font-size: 12px;
 }
-.microsoft-main-wrap .microsoft-wrap .microsoft-right-side {
+.ms-main-wrap .ms-wrap .ms-left-side .ms-nav-wrap > ul > li .ms-dropdown-wrap {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  width: 239px;
+  background-color: #f2f2f2;
+  border-left: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.ms-main-wrap .ms-wrap .ms-left-side .ms-nav-wrap > ul > li .ms-dropdown-wrap .ms-dropdown {
+  list-style-type: none;
+}
+.ms-main-wrap .ms-wrap .ms-left-side .ms-nav-wrap > ul > li .ms-dropdown-wrap .ms-dropdown li {
+  position: relative;
+}
+.ms-main-wrap .ms-wrap .ms-left-side .ms-nav-wrap > ul > li .ms-dropdown-wrap .ms-dropdown li:first-child:hover {
+  text-decoration: underline;
+}
+.ms-main-wrap .ms-wrap .ms-left-side .ms-nav-wrap > ul > li .ms-dropdown-wrap .ms-dropdown a {
+  display: block;
+  padding: 17px 24px;
+  color: #2F2F2F;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  line-height: 20px;
+}
+.ms-main-wrap .ms-wrap .ms-left-side .ms-nav-wrap > ul > li .ms-dropdown-wrap .ms-dropdown a:hover {
+  background-color: #e5e5e5;
+  -webkit-transition: background-color 0s;
+  transition: background-color 0s;
+  cursor: default;
+}
+.ms-main-wrap .ms-wrap .ms-left-side .ms-nav-wrap > ul > li .ms-dropdown-wrap .ms-dropdown a > i.fa-angle-right {
+  float: right;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.ms-main-wrap .ms-wrap .ms-left-side .ms-nav-wrap > ul > li .ms-dropdown-wrap .ms-dropdown .ms-dropdown-sec {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 300px;
+  height: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #e5e5e5;
+}
+.ms-main-wrap .ms-wrap .ms-left-side .ms-nav-wrap > ul > li .ms-dropdown-wrap .ms-dropdown .ms-dropdown-sec .ms-dropdown-sec-item:hover {
+  background-color: #d9d9d9;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.ms-main-wrap .ms-wrap .ms-right-side {
   float: right;
 }
-.microsoft-main-wrap .microsoft-wrap .microsoft-right-side form {
+.ms-main-wrap .ms-wrap .ms-right-side form {
   float: left;
   overflow: hidden;
   margin: 7px 5px 0 0;
 }
-.microsoft-main-wrap .microsoft-wrap .microsoft-right-side input[type="search"] {
+.ms-main-wrap .ms-wrap .ms-right-side input[type="search"] {
   float: left;
   width: 244px;
   height: 36px;
@@ -2267,22 +2335,22 @@
   font-family: "Segoe UI", "wf_segoe-ui_normal", "Arial", sans-serif;
   font-size: 14px;
 }
-.microsoft-main-wrap .microsoft-wrap .microsoft-right-side input[type="search"]::-webkit-search-cancel-button {
+.ms-main-wrap .ms-wrap .ms-right-side input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
-.microsoft-main-wrap .microsoft-wrap .microsoft-right-side input[type="search"]::-webkit-input-placeholder {
+.ms-main-wrap .ms-wrap .ms-right-side input[type="search"]::-webkit-input-placeholder {
   color: #000;
 }
-.microsoft-main-wrap .microsoft-wrap .microsoft-right-side input[type="search"]:-moz-placeholder {
+.ms-main-wrap .ms-wrap .ms-right-side input[type="search"]:-moz-placeholder {
   color: #000;
 }
-.microsoft-main-wrap .microsoft-wrap .microsoft-right-side input[type="search"]::-moz-placeholder {
+.ms-main-wrap .ms-wrap .ms-right-side input[type="search"]::-moz-placeholder {
   color: #000;
 }
-.microsoft-main-wrap .microsoft-wrap .microsoft-right-side input[type="search"]:-ms-input-placeholder {
+.ms-main-wrap .ms-wrap .ms-right-side input[type="search"]:-ms-input-placeholder {
   color: #000;
 }
-.microsoft-main-wrap .microsoft-wrap .microsoft-right-side button[type="submit"] {
+.ms-main-wrap .ms-wrap .ms-right-side button[type="submit"] {
   background-color: transparent;
   position: static;
   border: 1px solid #A9A9A9;
@@ -2294,43 +2362,47 @@
   cursor: pointer;
   font-size: 20px;
 }
-.microsoft-main-wrap .microsoft-wrap .microsoft-right-side button[type="submit"]:hover {
+.ms-main-wrap .ms-wrap .ms-right-side button[type="submit"]:hover {
   color: #0078D7;
 }
-.microsoft-main-wrap .microsoft-wrap .microsoft-right-side button[type="submit"] i.fa-neuter {
+.ms-main-wrap .ms-wrap .ms-right-side button[type="submit"] i.fa-neuter {
   margin-top: 5px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
-.microsoft-main-wrap .microsoft-wrap .microsoft-right-side .microsoft-cart {
+.ms-main-wrap .ms-wrap .ms-right-side .ms-cart {
   float: left;
 }
-.microsoft-main-wrap .microsoft-wrap .microsoft-right-side .microsoft-cart a {
+.ms-main-wrap .ms-wrap .ms-right-side .ms-cart a {
+  color: #2F2F2F;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   display: block;
   line-height: 48px;
   padding: 0 12px;
-  color: #2F2F2F;
-  text-decoration: none;
   font-size: 12px;
 }
-.microsoft-main-wrap .microsoft-wrap .microsoft-right-side .microsoft-cart a:hover {
+.ms-main-wrap .ms-wrap .ms-right-side .ms-cart a:hover {
   background-color: #f2f2f2;
 }
-.microsoft-main-wrap .microsoft-wrap .microsoft-right-side .microsoft-cart a i.fa-shopping-cart {
+.ms-main-wrap .ms-wrap .ms-right-side .ms-cart a i.fa-shopping-cart {
   font-size: 20px;
 }
-.microsoft-main-wrap .microsoft-wrap .microsoft-right-side .microsoft-signin {
+.ms-main-wrap .ms-wrap .ms-right-side .ms-signin {
   float: left;
 }
-.microsoft-main-wrap .microsoft-wrap .microsoft-right-side .microsoft-signin a {
+.ms-main-wrap .ms-wrap .ms-right-side .ms-signin a {
+  color: #2F2F2F;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   display: block;
   line-height: 48px;
   padding: 0 12px;
-  color: #2F2F2F;
-  text-decoration: none;
   font-size: 12px;
 }
-.microsoft-main-wrap .microsoft-wrap .microsoft-right-side .microsoft-signin a:hover {
+.ms-main-wrap .ms-wrap .ms-right-side .ms-signin a:hover {
   background-color: #f2f2f2;
 }
 .dropbox-wrap {
