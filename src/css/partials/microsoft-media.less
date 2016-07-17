@@ -222,8 +222,12 @@
 
 			.ms-left-side {
 				width: 450px;
-			}
 
+				.ms-nav-wrap {
+					display: block !important; 
+				}
+			}
+			
 			.ms-form-wrap {
 				width: 100%;
 				display: none;
@@ -288,19 +292,13 @@
 
 @media screen and (min-width: 1000px) and (max-width: 1600px) {
 	.ms-main-wrap {
-		
+
 		.ms-wrap {
 			width: 90%;
-		}
-	}
-}
 
-
-@media screen and (min-width: 1000px) and (max-width: 1600px) {
-	.ms-main-wrap {
-		
-		.ms-wrap {
-			width: 90%;
+			.ms-form-wrap {
+				display: block !important;
+			}
 		}
 	}
 }

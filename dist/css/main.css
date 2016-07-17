@@ -2641,6 +2641,9 @@
   .ms-main-wrap .ms-wrap .ms-left-side {
     width: 450px;
   }
+  .ms-main-wrap .ms-wrap .ms-left-side .ms-nav-wrap {
+    display: block !important;
+  }
   .ms-main-wrap .ms-wrap .ms-form-wrap {
     width: 100%;
     display: none;
@@ -2690,10 +2693,8 @@
   .ms-main-wrap .ms-wrap {
     width: 90%;
   }
-}
-@media screen and (min-width: 1000px) and (max-width: 1600px) {
-  .ms-main-wrap .ms-wrap {
-    width: 90%;
+  .ms-main-wrap .ms-wrap .ms-form-wrap {
+    display: block !important;
   }
 }
 @media screen and (min-width: 1600px) {
