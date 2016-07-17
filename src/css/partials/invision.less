@@ -1,13 +1,17 @@
 .invision-wrap {
+	min-width: 320px;
 	text-align: center;
 	padding: 160px 0 145px;
 	background: #323a45;
 	overflow: hidden;
 	font-family: 'Open Sans', 'Verdana', 'Arial', sans-serif;
+	transition: all 1s ease;
 
 	.invision-inside-wrap {
+		max-width: 1600px;
 		padding: 0 20px;
 		overflow: hidden;
+		margin: 0 auto;
 
 		.invision-header {
 			font-size: 30px;
@@ -20,6 +24,9 @@
 			overflow: hidden;
 			display: inline-block;
 			margin-bottom: 31px;
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
 			
 			.invision-input-wrap {
 				position: relative;
@@ -38,7 +45,7 @@
 					margin-right: 10px;
 					padding-left: 48px;
 					outline: none;
-				
+
 					&:focus:valid {
 						border: 2px solid lightgreen;
 					}
