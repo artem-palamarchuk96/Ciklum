@@ -2546,6 +2546,24 @@
   }
   .ms-main-wrap .ms-wrap .ms-left-side .ms-nav-wrap {
     display: none;
+    width: 30%;
+    position: absolute;
+    top: 48px;
+    right: 0;
+    margin-left: 0;
+    z-index: 999;
+    background-color: #f2f2f2;
+  }
+  .ms-main-wrap .ms-wrap .ms-left-side .ms-nav-wrap > ul > li {
+    float: none;
+  }
+  .ms-main-wrap .ms-wrap .ms-left-side .ms-nav-wrap > ul > li > a i.fa-angle-down {
+    float: right;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  .ms-main-wrap .ms-wrap .ms-left-side .ms-nav-wrap > ul > li .ms-dropdown-wrap {
+    width: 100%;
   }
   .ms-main-wrap .ms-wrap .ms-form-wrap {
     width: 100%;

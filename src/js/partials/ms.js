@@ -1,5 +1,9 @@
 window.onload = function() {
 
+	$('#ms-sandwich-btn').on('click', function() {
+		$('.ms-nav-wrap ').slideToggle();
+	});
+
 	$('#ms-btn-search').on('click', function() {
 		$('.ms-form-wrap').slideToggle();		
 	});
