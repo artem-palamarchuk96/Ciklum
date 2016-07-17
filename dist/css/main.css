@@ -2515,6 +2515,10 @@
     float: none;
     position: absolute;
     right: 0;
+    background-color: #0078D7;
+  }
+  .ms-main-wrap .ms-wrap .ms-form-wrap form .ms-inner-form-wrap button[type="submit"] i.fa-neuter {
+    color: #fff;
   }
   .ms-main-wrap .ms-wrap .ms-cart {
     display: none;
@@ -2592,6 +2596,10 @@
     float: none;
     position: absolute;
     right: 0;
+    background-color: #0078D7;
+  }
+  .ms-main-wrap .ms-wrap .ms-form-wrap form .ms-inner-form-wrap button[type="submit"] i.fa-neuter {
+    color: #fff;
   }
   .ms-main-wrap .ms-wrap .ms-cart {
     display: none;
@@ -2645,6 +2653,10 @@
     float: none;
     position: absolute;
     right: 0;
+    background-color: #0078D7;
+  }
+  .ms-main-wrap .ms-wrap .ms-form-wrap form .ms-inner-form-wrap button[type="submit"] i.fa-neuter {
+    color: #fff;
   }
   .ms-main-wrap .ms-wrap .ms-cart {
     display: none;
@@ -2947,28 +2959,38 @@
     width: 30%;
   }
 }
-.oculus-wrap {
+.oculus-main-wrap {
   width: 100%;
+  min-width: 320px;
   height: 300px;
-  overflow: hidden;
   font-family: 'Open Sans', 'Verdana', 'Arial', sans-serif;
+  background-color: #1B1D2F;
+  overflow: hidden;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
-.oculus-wrap .oculus-item {
+.oculus-main-wrap .oculus-wrap {
+  overflow: hidden;
+  max-width: 1600px;
+  margin: 0 auto;
+  height: 100%;
+}
+.oculus-main-wrap .oculus-wrap .oculus-item {
   position: relative;
   width: 33.333333%;
-  height: 300px;
+  height: 100%;
   float: left;
   overflow: hidden;
   background: #333;
 }
-.oculus-wrap .oculus-item:hover .oculus-image-wrap {
+.oculus-main-wrap .oculus-wrap .oculus-item:hover .oculus-image-wrap {
   opacity: 0.8;
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
 }
-.oculus-wrap .oculus-item .oculus-image-wrap {
+.oculus-main-wrap .oculus-wrap .oculus-item .oculus-image-wrap {
   width: 100%;
-  height: 300px;
+  height: 100%;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -2978,7 +3000,7 @@
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
 }
-.oculus-wrap .oculus-item .oculus-text-wrap {
+.oculus-main-wrap .oculus-wrap .oculus-item .oculus-text-wrap {
   width: 100%;
   position: absolute;
   top: 45%;
@@ -2986,23 +3008,104 @@
   padding: 0 32px;
   text-align: center;
   z-index: 10;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
-.oculus-wrap .oculus-item .oculus-text-wrap h3,
-.oculus-wrap .oculus-item .oculus-text-wrap h4 {
+.oculus-main-wrap .oculus-wrap .oculus-item .oculus-text-wrap h3,
+.oculus-main-wrap .oculus-wrap .oculus-item .oculus-text-wrap h4 {
   margin: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
-.oculus-wrap .oculus-item .oculus-text-wrap > h4 {
+.oculus-main-wrap .oculus-wrap .oculus-item .oculus-text-wrap > h4 {
   color: #a4a5a6;
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 2px;
   line-height: 16px;
 }
-.oculus-wrap .oculus-item .oculus-text-wrap > h3 {
+.oculus-main-wrap .oculus-wrap .oculus-item .oculus-text-wrap > h3 {
   color: #fff;
   font-size: 22px;
   font-weight: 600;
   line-height: 28px;
+}
+@media screen and (max-width: 1100px) {
+  .oculus-main-wrap {
+    height: 250px;
+  }
+  .oculus-main-wrap .oculus-wrap {
+    height: 100%;
+  }
+  .oculus-main-wrap .oculus-wrap .oculus-item {
+    height: 100%;
+  }
+  .oculus-main-wrap .oculus-wrap .oculus-item .oculus-image-wrap {
+    height: 100%;
+  }
+  .oculus-main-wrap .oculus-wrap .oculus-item .oculus-text-wrap {
+    top: 40%;
+  }
+  .oculus-main-wrap .oculus-wrap .oculus-item .oculus-text-wrap > h3 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .oculus-main-wrap {
+    height: 200px;
+  }
+  .oculus-main-wrap .oculus-wrap {
+    height: 100%;
+  }
+  .oculus-main-wrap .oculus-wrap .oculus-item {
+    height: 100%;
+  }
+  .oculus-main-wrap .oculus-wrap .oculus-item .oculus-image-wrap {
+    height: 100%;
+  }
+  .oculus-main-wrap .oculus-wrap .oculus-item .oculus-text-wrap {
+    top: 40%;
+  }
+  .oculus-main-wrap .oculus-wrap .oculus-item .oculus-text-wrap > h3 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .oculus-main-wrap {
+    height: auto;
+  }
+  .oculus-main-wrap .oculus-wrap {
+    height: auto;
+  }
+  .oculus-main-wrap .oculus-wrap .oculus-item {
+    width: 100%;
+    height: auto;
+  }
+  .oculus-main-wrap .oculus-wrap .oculus-item .oculus-image-wrap {
+    height: 300px;
+    background-position: center center;
+  }
+  .oculus-main-wrap .oculus-wrap .oculus-item .oculus-text-wrap {
+    top: 45%;
+  }
+  .oculus-main-wrap .oculus-wrap .oculus-item .oculus-text-wrap > h3 {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .oculus-main-wrap {
+    height: auto;
+  }
+  .oculus-main-wrap .oculus-wrap {
+    height: auto;
+  }
+  .oculus-main-wrap .oculus-wrap .oculus-item {
+    width: 100%;
+    height: auto;
+  }
+  .oculus-main-wrap .oculus-wrap .oculus-item:last-child .oculus-text-wrap {
+    top: 35%;
+  }
 }
 .apple-main-wrap {
   background-color: #f2f2f2;
