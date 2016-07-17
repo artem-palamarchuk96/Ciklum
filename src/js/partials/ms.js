@@ -1,4 +1,12 @@
 window.onload = function() {
+	$('.ms-dropdown li:eq(8)').hover(function(){
+		$('.ms-dropdown-sec').hide();
+	});
+
+	$('.ms-dropdown li:eq(9)').hover(function(){
+		$('.ms-dropdown-sec').hide();
+	});
+
 
 	$('#ms-sandwich-btn').on('click', function() {
 		$('.ms-nav-wrap ').slideToggle();
@@ -35,6 +43,7 @@ window.onload = function() {
 		$('.ms-dropdown-sec-item:eq(4)').text('Microsoft Lumia').show();
 		$('.ms-dropdown-sec-item:eq(5)').text('Accessories').show();
 	});
+
 
 	$('.ms-dropdown li:eq(2)').hover(function(){
 		$('.ms-dropdown-sec').show();
@@ -91,12 +100,6 @@ window.onload = function() {
 		$('.ms-dropdown-sec-item:eq(5)').hide();
 	});
 
-	$('.ms-dropdown li:eq(8)').hover(function(){
-		$('.ms-dropdown-sec').hide();
-	});
+}	
 
-	$('.ms-dropdown li:eq(9)').hover(function(){
-		$('.ms-dropdown-sec').hide();
-	});
 
-}
