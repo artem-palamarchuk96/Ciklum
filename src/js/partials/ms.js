@@ -1,17 +1,21 @@
 window.onload = function() {
 
+	$('#ms-btn-search').on('click', function() {
+		$('.ms-form-wrap').slideToggle();		
+	});
+
 	$('#ms-store-btn').on('click', function(e) {
 		$('.ms-dropdown-sec').hide();
 		$('#ms-products-drop').slideUp(200);
 		$('#ms-store-drop').stop().slideToggle(200);
 		e.preventDefault();
-	})
+	});
 
 	$('#ms-products-btn').on('click', function(e) {
 		$('#ms-store-drop').slideUp(200);
 		$('#ms-products-drop').stop().slideToggle(200);
 		e.preventDefault();
-	})
+	});
 
 
 	$('.ms-dropdown li:eq(0)').hover(function(){
